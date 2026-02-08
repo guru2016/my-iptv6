@@ -1,0 +1,26 @@
+name: Update IPTV
+on:
+  schedule:
+    - cron: '0 22 * * *' # 北京时间每天早上6点
+  workflow_dispatch: # 允许手动运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - name: Install requests
+      run: pip install requests
+    - name: Run Script
+      run: python main.py
+    - name: Commit result
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add ipv6.m3u
+        git commit -m "Auto update" || exit 0
+        git push
