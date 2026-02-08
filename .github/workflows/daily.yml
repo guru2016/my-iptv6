@@ -1,8 +1,14 @@
 name: Update IPTV
+
 on:
   schedule:
-    - cron: '0 22 * * *' # 北京时间每天早上6点
-  workflow_dispatch: # 允许手动运行
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+# --- 👇 新增这一段 👇 ---
+permissions:
+  contents: write
+# -----------------------
 
 jobs:
   build:
@@ -22,5 +28,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add ipv6.m3u
+        # 如果没有变化就不提交，防止报错
         git commit -m "Auto update" || exit 0
         git push
