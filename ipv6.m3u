@@ -163,8 +163,6 @@ http://101.35.240.114:88/live.php?id=山西卫视
 http://101.35.240.114:88/live.php?id=广东卫视
 #EXTINF:-1 group-title="💎 4K/8K" tvg-name="广东卫视4K" tvg-logo="",广东卫视4K
 http://101.35.240.114:88/live.php?id=广东卫视4K
-#EXTINF:-1 group-title="📡 卫视" tvg-name="广西卫视" tvg-logo="",广西卫视
-http://101.35.240.114:88/live.php?id=广西卫视
 #EXTINF:-1 group-title="📡 卫视" tvg-name="新疆卫视" tvg-logo="",新疆卫视
 http://101.35.240.114:88/live.php?id=新疆卫视
 #EXTINF:-1 group-title="🏙 地方/其他" tvg-name="晴彩少年「移动」" tvg-logo="https://epg-1.iill.top/logo/咪咕.png",晴彩少年「移动」
@@ -196,7 +194,7 @@ http://101.35.240.114:88/live.php?id=海南卫视
 #EXTINF:-1 group-title="📡 卫视" tvg-name="深圳卫视" tvg-logo="",深圳卫视
 http://101.35.240.114:88/live.php?id=深圳卫视
 #EXTINF:-1 group-title="💎 4K/8K" tvg-name="深圳卫视4K" tvg-logo="",深圳卫视4K
-http://101.35.240.114:88/live.php?id=深圳卫视
+http://101.35.240.114:88/live.php?id=深圳卫视4K
 #EXTINF:-1 group-title="📡 卫视" tvg-name="湖北卫视" tvg-logo="",湖北卫视
 http://101.35.240.114:88/live.php?id=湖北卫视
 #EXTINF:-1 group-title="📡 卫视" tvg-name="湖南卫视" tvg-logo="",湖南卫视
